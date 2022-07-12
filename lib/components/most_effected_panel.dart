@@ -1,6 +1,7 @@
 import 'package:covid_tracker_app/controllers/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MostEffectedPanel extends StatelessWidget {
   MostEffectedPanel({
@@ -30,8 +31,8 @@ class MostEffectedPanel extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              width: 60,
-              height: 60,
+              width: 50,
+              height: 50,
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               decoration: const BoxDecoration(
@@ -58,7 +59,10 @@ class MostEffectedPanel extends StatelessWidget {
                         controller.activeCasesList.isEmpty
                             ? "--"
                             : controller.activeCasesList[index]['Country_text'],
-                        style: Theme.of(context).textTheme.headline6,
+                        style: GoogleFonts.montserrat(
+                          textStyle: const TextStyle(
+                              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w600),
+                        ),
                       ),
                       const SizedBox(
                         height: 10,
@@ -68,7 +72,10 @@ class MostEffectedPanel extends StatelessWidget {
                               ? "--"
                               : controller.activeCasesList[index]
                                   ['Active Cases_text'],
-                          style: Theme.of(context).textTheme.headline6),
+                          style: GoogleFonts.montserrat(
+                            textStyle: const TextStyle(
+                                fontSize: 16, color: Colors.black, fontWeight: FontWeight.w600),
+                          ),),
                     ],
                   ),
                 );

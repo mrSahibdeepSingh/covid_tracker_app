@@ -13,27 +13,28 @@ TextTheme customTextTheme() {
     ),
     headline6: GoogleFonts.montserrat(
       textStyle: const TextStyle(
-          color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold),
+          color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
     ),
     headline4: GoogleFonts.montserrat(
       textStyle: const TextStyle(
           color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold),
     ),
+
     subtitle1: GoogleFonts.montserrat(
       textStyle: const TextStyle(
-          color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+          color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
     ),
     subtitle2: GoogleFonts.montserrat(
       textStyle: const TextStyle(
-          color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+          color: Colors.black, fontSize: 15, fontWeight: FontWeight.w700),
     ),
     bodyText1: GoogleFonts.montserrat(
       textStyle: const TextStyle(
-          color: Colors.black, fontSize: 18, fontWeight: FontWeight.w600),
+          color: Colors.black, fontSize: 14, fontWeight: FontWeight.w600),
     ),
     bodyText2: GoogleFonts.montserrat(
       textStyle: TextStyle(
-          fontSize: 18, color: Colors.orange[900], fontWeight: FontWeight.w600),
+          fontSize: 14, color: Colors.orange[900], fontWeight: FontWeight.w600),
     ),
     headline3: GoogleFonts.montserrat(
       textStyle: TextStyle(

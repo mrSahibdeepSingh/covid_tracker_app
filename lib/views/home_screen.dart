@@ -49,11 +49,13 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.orange[100],
+                        ),
                         margin: const EdgeInsets.only(top: 10),
                         alignment: Alignment.center,
-                        padding: const EdgeInsets.all(8),
-                        height: screenHeight * 0.12,
-                        color: Colors.orange[100],
+                        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+                        height: screenHeight * 0.11,
+
                         child: Text(
                           Source.quote,
                           style: Theme.of(context).textTheme.bodyText2,
@@ -66,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'Wordwide',
+                              'Worldwide',
                               style: Theme.of(context).textTheme.headline6,
                             ),
                             InkWell(
@@ -139,6 +141,8 @@ class HomeScreen extends StatelessWidget {
                       const SizedBox(height: 8),
                       const Divider(
                         thickness: 1.5,
+                        indent: 30,
+                        endIndent: 30,
                       ),
                       Center(
                         child: Text(

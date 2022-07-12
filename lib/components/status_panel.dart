@@ -25,19 +25,20 @@ class StatusPanel extends StatelessWidget {
       width: double.infinity / 2,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
             title,
             style: GoogleFonts.montserrat(
               textStyle: TextStyle(
-                  color: textColor, fontSize: 18, fontWeight: FontWeight.bold),
+                  color: textColor, fontSize: 14, fontWeight: FontWeight.bold),
             ),
           ),
           Text(
             count,
             style: GoogleFonts.montserrat(
               textStyle: TextStyle(
-                  color: textColor, fontSize: 18, fontWeight: FontWeight.bold),
+                  color: textColor, fontSize: 16, fontWeight: FontWeight.bold),
             ),
           ),
         ],
